@@ -46,7 +46,10 @@ The script is divided into distinct steps:
         .\VPNConnectionScript.ps1
         ```
 
-3. **Modify VPN Connection Settings (Optional)**:  
+3. **Execution Policy Change**  
+   When running the script, PowerShell may prompt you with a message asking to change the execution policy. To proceed, simply press **"Y"** or **"A"** to allow the script to run. This will ensure that the script can be executed without restrictions due to the current execution policy settings.
+   
+4. **Modify VPN Connection Settings (Optional)**:  
    You can change the VPN connection name, user, password, or VPN tunnel type by editing the following lines in the script:
    ```powershell
    $vpnName = "VPN Gate"  # Modify the VPN connection name
